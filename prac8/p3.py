@@ -1,7 +1,8 @@
 class Student :
+    int count=0;
     def __init__(self):
         print("Constructor __init()__ called");
-        
+        self.count=self.count+1;
     def input(self):
         self.rno = int(input("Enter roll no .: "));
         self.c_marks=int(input("Enter c_marks : "));
@@ -33,7 +34,7 @@ class Student :
         print("Total marks : ",self.total_marks);
         print("Percentage : ",self.per);
         print("Grade ",self.grade);
-
+        print("object count : ",self.count);
 stud1= Student();
 stud1.input();
 stud1.calc_total();
